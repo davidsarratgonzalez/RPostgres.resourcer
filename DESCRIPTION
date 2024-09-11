@@ -1,6 +1,6 @@
 Package: resourcer
 Type: Package
-Title: Resource Resolver
+Title: resourcer with RPostgres support
 Version: 1.5.0
 Authors@R: 
     c(person(given = "Yannick",
@@ -11,10 +11,9 @@ Authors@R:
       person("OBiBa group",
              role="cph",
              email="info@obiba.org"))
-Description: A resource represents some data or a computation unit. It is 
-    described by a URL and credentials. This package proposes a Resource model
-    with "resolver" and "client" classes to facilitate the access and the usage of the 
-    resources.
+Description: A version of the resourcer package that restores RPostgres support for 
+    improved compatibility with PostgreSQL databases in certain environments. Mainly 
+    for local development and testing of DataSHIELD packages.
 License: LGPL (>= 2.1)
 LazyData: true
 Depends:
@@ -34,7 +33,7 @@ Suggests:
     dbplyr,
     DBI,
     RMariaDB,
-    RPostgreSQL,
+    RPostgres,
     sparklyr,
     RPresto (>= 1.4.0),
     nodbi,
